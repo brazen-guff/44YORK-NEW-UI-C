@@ -1,0 +1,635 @@
+/*top strip */
+prm-topbar {
+    border-top: 40px solid #262F38;
+}
+
+head {
+    display: none;
+}
+
+/* space for logo */
+prm-topbar {
+    height: 130px;
+    background-color: #C5C9CA;
+}
+prm-topbar prm-logo {
+    max-width: 425px;
+    min-width: 200px;
+}
+
+prm-logo{
+    order:-1;
+}
+prm-main-menu{
+    order:2;
+}
+prm-search-bookmark-filter{
+    order:4;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+}
+
+/*login*/
+prm-user-area{
+    max-width: 88px;
+    order: 0
+}
+
+
+/* remove the space filling function of this div so the top menu is right aligned  */
+/*
+ * body > primo-explore > div > prm-explore-main > div > prm-topbar > div > div.flex-xs-100.flex-50{
+flex: 0;
+}
+*/
+
+/* remove hover highlight from logo */
+#banner > a.md-primoExplore-theme:hover, #banner > a.md-primoExplore-theme:focus {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+
+/* Browse search colour*/
+
+prm-primary-bg, prm-browse-search-bar, prm-journals-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
+    background-color: #262F38;
+}
+
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    background-color: #00acc8;
+}
+
+/*sign in colour*/
+/* Top nav bar (strip behind logo) */
+prm-topbar .top-nav-bar {
+    background-color: #000000;
+    position: relative;
+    top: -30px;
+
+/*sign in alert bar*/
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-border {
+    border-color: #FFFFFF;
+}
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {
+    background-color: #FFFFFF;
+}
+
+.bar.alert.bar, .classic-input .search-scope, .prm-alert {
+  color: #000000;
+}
+/*radio button*/
+
+
+
+/* the loading icon */
+
+.diamond {
+  background-color: #7fbfb2 !important;
+}
+/*Hide Tags in Detailed DIsplay */
+[aria-label="Tags"]{display:none;}
+#tags{display:none;}
+
+/*Hide tags in Menu Tab*/
+a.md-button[aria-label="TAGS"]{display:none;}
+a.md-button[aria-label="nui.mainmenu.label.tags"]{display:none;}
+/*Hide tags in Main Menu for authenticated users and guest users*/
+.md-button[aria-label="nui.mainmenu.label.tags"],. md.button[aria-label="TAGS"], {display:none;}
+
+/*User area to UoS discovery green* RCW 07*/
+
+    /* Background color for Upper Menu */
+    .prm-primary-bg.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {
+        background-color: #F1F1F1;
+    }
+
+    /* Text color for Upper Menu */
+    prm-explore-main prm-topbar .md-button:not(.md-icon-button)  {
+        color: #262F38;
+    }
+
+/*homepage */
+md-card.default-card._md.md-primoExplore-theme {
+    background-color: #F1F2F1;
+    border-radius: 2px;
+}
+
+/*homepage box titles */
+md-card-title.home {
+
+	font-family:'Open Sans', sans-serif;background-color:#535E64;color:#FFF;width:auto;padding:5px 0 5px 5px;margin:0 0 10px 0;font-size:120%;
+	border-radius: 15px;
+	  background: #00546E;
+	  padding: 5px;
+	  height: 50px;
+	  text-align: center;
+}
+
+.md-headline
+ {
+	
+	position: relative;
+top: 50%;
+transform: translateY(-50%); 
+}
+
+/*a-z backgrounds*/
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    color: #000000;
+    background-color: #262F38;
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {
+    background-color: #7fbfb2;
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-border {
+    border-color: #262F38;
+}
+
+/*log in button - sign in alert*/
+.bar prm-authentication .md-button, .md-button.button-as-link {
+    text-transform: none;
+    font-size: 1em;
+    min-width: 0;
+    padding: .3em .35em;
+    line-height: 1em;
+    min-height: 0;
+    margin: 0 .25em;
+    overflow: visible;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    letter-spacing: 0;
+    color: #000000
+}
+
+/*custom md cards*/
+.star-df-card {
+    text-align: center;
+    padding: 0 0 75px;
+}
+
+.star-df-card a {
+    color: #262F38;
+    text-decoration: none;
+}
+
+
+.sp_social_icons {
+    justify-content: space-around;
+}
+
+.sp_social_icons div.social {
+    border: none;
+    padding: 0;
+    height:44px;
+    width:44px;
+    background-image:  url(../img/social.png);
+    background-repeat: no-repeat;
+    background-size: 44px, 176px;
+    background-position-x: 0px;
+}
+.social.sp_twitter_icon {
+    background-position-y: -88px;
+}
+.social.sp_youtube_icon {
+    background-position-y: -132px;
+}
+.social.sp_instagram_icon {
+    background-position-y: -44px;
+}
+.social.sp_facebook_icon {
+    background-position-y: 0px;
+}
+
+.sp_social_icons img {
+    height: 44px;
+}
+
+#sp_contact div {
+    display: block;
+}
+
+#sp_contact a:hover {
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#sp_contact div:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#orcid_logo, prm-service-links img {
+    height: 1em;
+}
+
+#starplus_carousel {
+    border: 1px #262F38 solid;
+    height: 178px;
+}
+
+#contentbuttons {
+  padding-top: 6px;
+}
+
+/*top strip*/
+prm-topbar {
+    border-top: 40px solid #262F38;
+}
+
+head {
+    display: none;
+}
+
+/* space for logo */
+prm-topbar {
+    height: 130px;
+    background-color: #F1F1F1;
+}
+prm-topbar prm-logo {
+    max-width: 425px;
+    min-width: 200px;
+}
+
+prm-logo{
+    order:-1;
+}
+
+prm-main-menu{
+    order:3;
+}
+
+prm-search-bookmark-filter{
+    order:4;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+}
+
+prm-user-area{
+    max-width: 88px;
+    order: 5;
+}
+
+
+
+
+/* remove the space filling function of this div so the top menu is right aligned  */
+/*
+ * body > primo-explore > div > prm-explore-main > div > prm-topbar > div > div.flex-xs-100.flex-50{
+flex: 0;
+}
+*/
+
+
+/* remove hover hilight from logo */
+#banner > a.md-primoExplore-theme:hover, #banner > a.md-primoExplore-theme:focus {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+topbanner {
+  background: linear-gradient(to right, white, white, white, #262F38);
+  color white;
+  display: flex;
+  margin: 0;
+  position: relative;
+  top: -36px;
+  border-radius: 3px;
+  height: 2em;
+  flex-direction:row;
+  width:80%;
+}
+
+topbanner li {
+ list-style: none;
+ border-color: #C7C1B0;
+ border-right: #C7C1B0 solid 1px;
+ padding: 0 16px;
+ /* vertical-align:  middle; */
+ display:  flex;
+ flex-direction:  column;
+ justify-content:  center;
+}
+
+topbanner li:last-child {
+    border-right: unset;
+}
+
+
+/* Browse search colour*/
+
+prm-primary-bg, prm-browse-search-bar, prm-journals-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
+    background-color: #262F38;
+}
+
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    background-color: #00acc8;
+}
+
+/*sign in colour*/
+/* Top nav bar (strip behind logo) */
+prm-topbar .top-nav-bar {
+    background-color: #000000;
+    position: relative;
+    top: -30px;
+
+/*sign in alert bar*/
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-border {
+    border-color: #FFFFFF;
+}
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {
+    background-color: #FFFFFF;
+}
+
+.bar.alert.bar, .classic-input .search-scope, .prm-alert {
+  color: #000000;
+}
+/*radio button*/
+
+
+
+/* the loading icon */
+
+.diamond {
+  background-color: #C7C1B0 !important;
+}
+/*Hide Tags in Detailed DIsplay */
+[aria-label="Tags"]{display:none;}
+#tags{display:none;}
+
+/*Hide tags in Menu Tab*/
+a.md-button[aria-label="TAGS"]{display:none;}
+a.md-button[aria-label="nui.mainmenu.label.tags"]{display:none;}
+/*Hide tags in Main Menu for authenticated users and guest users*/
+.md-button[aria-label="nui.mainmenu.label.tags"],. md.button[aria-label="TAGS"], {display:none;}
+
+/*User area to UoS discovery green* RCW 07*/
+
+    /* Background color for Upper Menu */
+    .prm-primary-bg.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {
+        background-color: #F1F1F1;
+    }
+
+    /* Text color for Upper Menu */
+    prm-explore-main prm-topbar .md-button:not(.md-icon-button)  {
+        color: #262F38;
+    }
+/*box headline- copied from IW VU2*/
+md-card.default-card._md.md-primoExplore-theme {
+    background-color: #F1F2F1;
+    border-radius: 2px;
+}
+
+/*.md-headline {
+  background-color: #262F38;
+  color: #FFFFFF!important;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding-top: 0.3rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  margin: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}*/
+
+/*a-z backgrounds*/
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    color: #000000;
+    background-color: #262F38;
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {
+    background-color: #C7C1B0;
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-border {
+    border-color: #262F38;
+}
+
+/*log in button - sign in alert*/
+.bar prm-authentication .md-button, .md-button.button-as-link {
+    text-transform: none;
+    font-size: 1em;
+    min-width: 0;
+    padding: .3em .35em;
+    line-height: 1em;
+    min-height: 0;
+    margin: 0 .25em;
+    overflow: visible;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    letter-spacing: 0;
+    color: #000000
+}
+
+/*custom md cards*/
+.star-df-card {
+    text-align: center;
+    padding: 0 0 75px;
+}
+
+.star-df-card a {
+    color: #262F38;
+    text-decoration: none;
+}
+
+.star-df-card-graphic {
+    background-image:  url(../img/StarPlusIcons.png);
+    background-repeat: no-repeat;
+    background-size: 100px, 700px;
+
+
+
+    background-position-x: 0px;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+
+}
+
+.star-df-card-graphic.timeicon {
+    background-position-y: 0px;
+}
+
+.star-df-card-graphic.helpicon {
+    background-position-y: -102px;
+}
+
+.star-df-card-graphic.ordaicon {
+    background-position-y: -204px
+}
+
+.star-df-card-graphic.resourceicon {
+    background-position-y: -306px;
+}
+
+.star-df-card-graphic.nfcaicon {
+    background-position-y: -510px;
+}
+
+.star-df-card-graphic.spcicon {
+    background-position-y: -612px;
+}
+
+.star-df-card-title {
+    top: 103px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*LANGUAGE REMOVAL?*/
+
+span.user-language, prm-change-lang {
+  display: none !important;
+}
+
+/* Removes langauge selector from more menu
+div.overlay-menu-item.layout-align-center-center.layout-row {
+    display: none;
+}*/
+
+    /* Text height for upper Menu*/
+
+prm-main-menu[menu-type=menu] .md-button, 
+prm-topbar .top-nav-bar .md-button 
+{
+  font-size: .99em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+    /* Text color for Upper Menu on mouse over */
+    prm-explore-main prm-topbar .top-nav-bar .layout-row .md-button:not(.md-icon-button):hover {
+        color: black;
+    }
+
+    /* Text color for Upper Menu on mouse over when on Tags page */
+    prm-tags prm-topbar prm-main-menu .item-content {
+        color: #262F38;
+    }
+
+    /* Text color for Upper Menu on mouse over when on Tags page */
+    prm-tags prm-topbar prm-main-menu .item-content:hover {
+        color: black;
+    }
+
+    /* Text color for Upper Menu when on My Account page */
+    prm-account prm-topbar prm-main-menu .item-content {
+        color: #262F38;
+    }
+
+    /* Text color for Upper Menu on mouse over when on My Account */
+    prm-main-menu .top-nav-bar-links .item-content:hover {
+        color: black;
+    }
+
+    /* Not signed in background */
+    .user-menu-button {
+        background-color: white;
+        font-size: 1.2em;
+    }
+
+    /* Not signed in text*/
+    prm-topbar .md-primoExplore-theme .user-name {
+        color: black;
+        font-size: 1.1em;
+    }
+
+    /* 2 */
+    .prm-primary-bg, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after {
+        background-color: #262F38;
+        color: 008065;
+    }
+
+    /* Search Bar */
+    /* Search bar magnifying glass */
+    prm-search-bar .simple-search-wrapper .search-actions .md-button {
+        color: #262F38;
+    }
+
+    /* Search bar magnifying glass on Tags page */
+    prm-tags-search-bar .search-elements-wrapper .md-button {
+        color: #262F38;
+    }
+
+    /* My Account>Personal Details - Hide ability to edit notifications */
+    prm-personal-info #personalDetails {
+        display: none;
+    }
+    /* Marked List */
+prm-topbar #back-to-top-button #favorites-button {
+    color: white;
+    background-color: #262F38;
+}
+
+/* Marked List when scrolling down the page */
+prm-topbar prm-search-bookmark-filter #fixed-buttons-holder #favorites-button {
+    color: white;
+}
+
+/* Search History */
+prm-topbar .layout-align-end-center .md-icon-button {
+    color: white;
+    background-color: #262F38;
+}
+
+/* Search History when scrolling down the page */
+prm-topbar prm-search-bookmark-filter #search-button.md-icon-button {
+    color: white;
+}
+
+/*chat */
+
+#chat_widget_icon png {
+  fill: 4b91e1;
+}
+
+.chat-tab{
+  color: 4b91e1;
+  background: white;
+
+  /* Browzine styles */
+.browzine-icon  {
+  margin-right:2px;
+}
+
+.browzine-external-link {
+  width:15px;
+  height:15px;
+  min-width:15px;
+  min-height:15px;
+}
+
+/* altmetrics */
+
+.full-view-section.loc-altmetrics{
+    background-color: #f3f3f3;
+    margin-top:0px;
+    padding-left: 3em;
+}
+
+md-card-content > iframe {
+    min-height: 480px;
+	display:block;
+    width:100%;
+}
+
